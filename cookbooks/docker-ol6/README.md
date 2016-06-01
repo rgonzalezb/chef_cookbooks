@@ -1,18 +1,20 @@
 # docker-ol6 Cookbook
 
-TODO: Enter the cookbook description here.
+Version 1.0
 
-e.g.
-This cookbook makes your favorite breakfast sandwich.
+This cookbook for Chef helps you bake docker on Oracle Linux 6, setting up a node by editing the yum repository, upgrading the UEK and installing and starting the docker service.
 
 ## Requirements
 
-TODO: List your cookbook requirements. Be sure to include any requirements this cookbook has on platforms, libraries, other cookbooks, packages, operating systems, etc.
+This cookbook has been tested on:
 
-e.g.
+Oracle Linux 6.7 (UEK 3)
+
+The node must have access to yum repositories in order to upgrade the kernel and download docker.
+
 ### Platforms
 
-- SandwichOS
+- Oracle Linux 6.7
 
 ### Chef
 
@@ -20,7 +22,7 @@ e.g.
 
 ### Cookbooks
 
-- `toaster` - docker-ol6 needs toaster to brown your bagel.
+- `docker` - docker-ol6 needs docker package for installing and starting docker service.
 
 ## Attributes
 
@@ -76,5 +78,7 @@ e.g.
 
 ## License and Authors
 
-Authors: TODO: List authors
+Authors: 
+
+@Raúl González
 
